@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>F:\workspace\AmazonAutomation\src\test\java\com\qa\utilities\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testscripts.TC_Amazon_01" hash-for-method="SearchProduct(Books, Da vinci code)">SearchProduct(Books, Da vinci code)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testscripts.TC_Amazon_01" hash-for-method="SearchProduct(Electronics, Mobile phones)">SearchProduct(Electronics, Mobile phones)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testscripts.TC_Amazon_01" hash-for-method="SearchProduct(Furniture, Wooden tables)">SearchProduct(Furniture, Wooden tables)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testscripts.TC_Amazon_01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchProduct(Books, Da vinci code)">
+                  </a> <!-- SearchProduct(Books, Da vinci code) -->
+                  <span class="method-name">SearchProduct</span>
+                  <span class="parameters">(Books, Da vinci code)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchProduct(Electronics, Mobile phones)">
+                  </a> <!-- SearchProduct(Electronics, Mobile phones) -->
+                  <span class="method-name">SearchProduct</span>
+                  <span class="parameters">(Electronics, Mobile phones)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchProduct(Furniture, Wooden tables)">
+                  </a> <!-- SearchProduct(Furniture, Wooden tables) -->
+                  <span class="method-name">SearchProduct</span>
+                  <span class="parameters">(Furniture, Wooden tables)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\workspace\AmazonAutomation\src\test\java\com\qa\utilities\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utilities.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;Url&quot; value=&quot;https://www.amazon.in/&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testscripts.TC_Amazon_01&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'SearchProduct')
+data.setCell(0, 2, 'com.qa.testscripts.TC_Amazon_01')
+data.setCell(0, 3, 8252);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SearchProduct')
+data.setCell(1, 2, 'com.qa.testscripts.TC_Amazon_01')
+data.setCell(1, 3, 7221);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SearchProduct')
+data.setCell(2, 2, 'com.qa.testscripts.TC_Amazon_01')
+data.setCell(2, 3, 7101);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchProduct(Books, Da vinci code)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The Da Vinci Code: (Robert Langdon Book 2)</span>
+                <span class="reporter-method-output">₹312</span>
+                <span class="reporter-method-output">The Da Vinci Code (Abridged Edition)</span>
+                <span class="reporter-method-output">₹129</span>
+                <span class="reporter-method-output">DA VINCI CODE</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">The Robert Langdon Collection by Dan Brown: Inferno/The Lost Symbol/The Da Vinci Code/Angels & Demons</span>
+                <span class="reporter-method-output">₹363</span>
+                <span class="reporter-method-output">Robert Langdon Series Collection 7 Books Set By Dan Brown (Angels And Demons, The Da Vinci Code, The Lost Symbol, Inferno, Origin, Digital Fortress, Deception Point)</span>
+                <span class="reporter-method-output">₹228</span>
+                <span class="reporter-method-output">The Da Vinci Code</span>
+                <span class="reporter-method-output">₹430</span>
+                <span class="reporter-method-output">Davinci Code</span>
+                <span class="reporter-method-output">₹2,099</span>
+                <span class="reporter-method-output">The Da Vinci Code Mysteries: What the Movie Doesn't Tell You</span>
+                <span class="reporter-method-output">₹265</span>
+                <span class="reporter-method-output">101 Witty Stories Of Akbar and Birbal - Collection Of Humorous Stories For Kids</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">Hungry Gods</span>
+                <span class="reporter-method-output">₹195</span>
+                <span class="reporter-method-output">Unveiling the Da Vinci Code: The Mystery of the Da Vinci Code Revealed, a Christian Perspective</span>
+                <span class="reporter-method-output">₹570</span>
+                <span class="reporter-method-output">The Da Vinci Code</span>
+                <span class="reporter-method-output">₹429</span>
+                <span class="reporter-method-output">The Da Vinci Code: From Dan Brown’s Fiction to Mary Magdalene’s Faith</span>
+                <span class="reporter-method-output">₹238</span>
+                <span class="reporter-method-output">Fact and Fiction in "The Da Vinci Code"</span>
+                <span class="reporter-method-output">₹350</span>
+                <span class="reporter-method-output">THE DA VINCI CODE : A QUEST FOR ANSWERS (HINDI)</span>
+                <span class="reporter-method-output">₹1,429</span>
+                <span class="reporter-method-output">DaVinci's Code EXPOSED: The Truth About Desposynism and the Family of Jesus Christ</span>
+                <span class="reporter-method-output">₹972</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchProduct(Electronics, Mobile phones)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">₹13,999</span>
+                <span class="reporter-method-output">New Apple iPhone 12 Mini (128GB) - White</span>
+                <span class="reporter-method-output">₹63,999</span>
+                <span class="reporter-method-output">Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate</span>
+                <span class="reporter-method-output">₹12,499</span>
+                <span class="reporter-method-output">Redmi 9A (Nature Green, 2GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">₹6,799</span>
+                <span class="reporter-method-output">Oppo A31 (Fantasy White, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">₹10,990</span>
+                <span class="reporter-method-output">Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)| 5000 mAh| 2.3GHz Mediatek Helio G35 Octa core Processor</span>
+                <span class="reporter-method-output">₹8,499</span>
+                <span class="reporter-method-output">Vaya Phone Stand for Mobiles Tablets & E-reader Devices | Multi-angle rotation for flexibility | Comfortable for watching movies n attending zoom calls on phone | Color- Black | Perfect Valentine Gift</span>
+                <span class="reporter-method-output">₹490</span>
+                <span class="reporter-method-output">Vivo Y91i (Ocean Blue, 3GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">₹7,990</span>
+                <span class="reporter-method-output">Samsung Guru Music 2 (Gold)</span>
+                <span class="reporter-method-output">₹1,950</span>
+                <span class="reporter-method-output">Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">₹12,499</span>
+                <span class="reporter-method-output">Oppo A31 (Mystery Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">₹10,990</span>
+                <span class="reporter-method-output">Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games, and Premium Finish – Black Colour</span>
+                <span class="reporter-method-output">₹3,617</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">₹13,999</span>
+                <span class="reporter-method-output">Samsung Galaxy M21 (Raven Black, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">₹14,499</span>
+                <span class="reporter-method-output">Mi 11X 5G Cosmic Black 6GB RAM 128GB ROM|SD 870|DisplayMate A+ rated E4 AMOLED |HDFC Cashback Upto 3500|NCEMI upto 12 Months|</span>
+                <span class="reporter-method-output">₹29,999</span>
+                <span class="reporter-method-output">Mi 11X Pro 5G (Lunar White, 8GB RAM, 128GB Storage) | Upto INR 4000 Off on HDFC Bank Cards and EMI | Upto 12 Months No Cost EMI</span>
+                <span class="reporter-method-output">₹39,999</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchProduct(Furniture, Wooden tables)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Crystal Wooden Art Original Sheesham Wooden Coffee Table with Drawers | Stylish and Elegant Coffee Table | Natural Finish</span>
+                <span class="reporter-method-output">₹10,000</span>
+                <span class="reporter-method-output">LowCost Furniture Sheesham Solid Wood Coffee Table | Coffee Tables Wooden | Coffee Table for Living Room | Finish Color - Natural Teak</span>
+                <span class="reporter-method-output">₹17,999</span>
+                <span class="reporter-method-output">LowCost Furniture Sheesham Wooden Console Table | Console Tables for Living Room | Study Table for Kids | Study Table for Adults | Natural Brown Finish</span>
+                <span class="reporter-method-output">₹12,000</span>
+                <span class="reporter-method-output">DECORVAIZ Marvelous Look Premium Wooden Folding Side Table | Coffee Table | End Table - (12 Inch)</span>
+                <span class="reporter-method-output">₹355</span>
+                <span class="reporter-method-output">DECORVAIZ Wooden Royal Look Beautiful Folding Side | Coffee | End | Table - (12 INCH)</span>
+                <span class="reporter-method-output">₹388</span>
+                <span class="reporter-method-output">DECORVAIZ Wooden Royal Look Beautiful Folding Side | Coffee | End | Table - (12 INCH)</span>
+                <span class="reporter-method-output">₹378</span>
+                <span class="reporter-method-output">Ultimate Twist® Round Beautiful Wooden Folding Stool Foldable Stool for Office, Kitchen & Home Décor Wooden Folding Table - (12INCH)</span>
+                <span class="reporter-method-output">₹299</span>
+                <span class="reporter-method-output">GIZGA essentials Multipurpose Wooden Foldable Bed Table - Laptop Table for Reading/Eating/Study Table/Craftwork (Wenge)</span>
+                <span class="reporter-method-output">₹999</span>
+                <span class="reporter-method-output">SZHC Beautiful Antique Wooden Folding Side Table (Brown)</span>
+                <span class="reporter-method-output">₹399</span>
+                <span class="reporter-method-output">classic shoppee ABE Handicrafts Wooden Matte Handcrafted Square Antique Finish Folding Stool for Living Room (Dark Brown, 12" inch)</span>
+                <span class="reporter-method-output">₹372</span>
+                <span class="reporter-method-output">Heritage wood crafts Antique Folding End Table-8*8*8 inches(L*W*H) (Wood; Glossy, Brown)</span>
+                <span class="reporter-method-output">₹450</span>
+                <span class="reporter-method-output">Sk Handicrafts sk handicraft Wooden Square Folding Side Table/Coffee and Outdoor Table for and Living Room 12 inch (Brown)</span>
+                <span class="reporter-method-output">₹399</span>
+                <span class="reporter-method-output">Amazon Brand - Solimo Sienna Solid Sheesham Wood Contemporary Coffee Table (Teak Finish)</span>
+                <span class="reporter-method-output">₹5,099</span>
+                <span class="reporter-method-output">BLUEWUD Victor Engineered Wood Coffee Table/Centre Table with Shelves (Wenge)</span>
+                <span class="reporter-method-output">₹3,649</span>
+                <span class="reporter-method-output">BLUEWUD Leo Engineered Wood Coffee Table/Centre Table with Shelves (Wenge)</span>
+                <span class="reporter-method-output">₹3,749</span>
+                <span class="reporter-method-output">UHUD CRAFTSBeautiful Antique Wooden Foldable Side Table/End Table/Stool Living Room Kids Play Furniture Table Square Shape</span>
+                <span class="reporter-method-output">₹249</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.TC_Amazon_01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Setup(chrome, https://www.amazon.in/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">SearchProduct(Books, Da vinci code)</span>
+                <span class="method-start">10398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchProduct(Electronics, Mobile phones)</span>
+                <span class="method-start">18668 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchProduct(Furniture, Wooden tables)</span>
+                <span class="method-start">25891 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">32995 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
